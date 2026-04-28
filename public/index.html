@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shpping Website</title>
+  <!-- fontwsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header_container">
+      <div class="icon"><i class="fa-solid fa-bars"></i></div>
+      <div class="input_area">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" name="" id="inputBox" placeholder="Search">
+      </div>
+      <div class="shopping_cart">
+        <i class="fa-solid fa-bowl-food"></i>
+        <div class="shop">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="count">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- hero section -->
+  <section class="hero">
+    <div class="hero_container">
+      <div class="bg_color">
+        <h2>Quick Bite</h2>
+        <p>Where Toste Takes the Fast Lane</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- food menu -->
+  <section class="food_menu">
+    <h2 class="heading">Food Menu</h2>
+    <div class="food_area">
+      <div class="food_item">
+        <img src="./image/barger-1.jpg" alt="">
+        <p>Burger</p>
+      </div>
+
+      <div class="food_item">
+        <img src="./image/egg.jpg" alt="">
+        <p>Curry</p>
+      </div>
+      <div class="food_item">
+        <img src="./image/frise.jpg" alt="">
+        <p>Frices</p>
+      </div>
+      <div class="food_item">
+        <img src="./image/khabab.jpg" alt="">
+        <p>Chabub</p>
+      </div>
+      <div class="food_item">
+        <img src="./image/loduls.jpg" alt="">
+        <p>Loduls</p>
+      </div>
+      <div class="food_item">
+        <img src="./image/pizza.jpg" alt="">
+        <p>Pizza</p>
+      </div>
+      <div class="food_item">
+        <img src="./image/pryce.jpg" alt="">
+        <p>Preyci</p>
+      </div>
+      <div class="food_item">
+        <img src="./image/sobgi.jpg" alt="">
+        <p>Sobgy</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Food items section -->
+  <section class="food_irems-area">
+    <h2 class="heading">Food items</h2>
+    <div class="food_items">
+      <div class="food_cart">
+        <img src="./image/barger-1.jpg" alt="">
+        <p>Burger</p>
+        <div class="purces">
+          <p>$3.50</p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="food_cart">
+        <img src="./image/egg.jpg" alt="">
+        <p>Curry</p>
+        <div class="purces">
+          <p>$5.00</p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="food_cart">
+        <img src="./image/frise.jpg" alt="">
+        <p>Frices</p>
+        <div class="purces">
+          <p>$8.50</p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="food_cart">
+        <img src="./image/khabab.jpg" alt="">
+        <p>Chabub</p>
+        <div class="purces">
+          <p>$10.00</p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="food_cart">
+        <img src="./image/loduls.jpg" alt="">
+        <p>Loduls</p>
+        <div class="purces">
+          <p>$13.50</p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="food_cart">
+        <img src="./image/pizza.jpg" alt="">
+        <p>Pizza</p>
+        <div class="purces">
+          <p>$2.80</p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="food_cart">
+        <img src="./image/pryce.jpg" alt="">
+        <p>Preyci</p>
+        <div class="purces">
+          <p>$15.50</p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="food_cart">
+        <img src="./image/sobgi.jpg" alt="">
+        <p>Sobgy</p>
+        <div class="purces">
+          <p>$11.00</p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="food_cart">
+        <img src="./image/barger-2.webp" alt="">
+        <p>Burger 2</p>
+        <div class="purces">
+          <p>$4.50</p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- checkout section -->
+  <section class="checkout_section">
+    <div class="checkout_area">
+      <div class="text_icon">
+        <h3>My Cart</h3>
+        <i class="fa-solid fa-xmark closce_icon"></i>
+      </div>
+      <div class="all_cart">
+        <div class="card_item">cart all</div>
+      </div>
+      <div class="amount_area">
+        <div class="amount">
+          <h5>Total</h5>
+          <h4 class="total">$0.00</h4>
+        </div>
+        <button id="checkout_btn">Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="../dist/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 5%;
+  position: relative;
+}
+/* header section */
+
+header{
+  position: fixed;
+  top: 0;
+  left: 5px;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  padding: 0 10px;
+}
+.header_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin: 10px;
+}
+.input_area{
+  background-color: #cbd3e0;
+  border-radius: 7px;
+  width: 60%;
+}
+.input_area > i{
+  padding: 5px;
+  cursor: pointer;
+}
+.input_area > input{
+  padding-right: 50px;
+  background: transparent;
+}
+.shopping_cart{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.fa-bowl-food{
+  background-color: #cbd3e0;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.fa-cart-shopping{
+  border: 1.5px solid #cbd3e0;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  
+}
+.shop{
+  position: relative;
+}
+.count{
+  position: absolute;
+  top: -1;
+  right: 0;
+  background-color: #cbd3e0;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 0 2px;
+  color: white;
+}
+
+/* hero section */
+.hero_container{
+  background-image: url(./image/backround-img.webp);
+  height: 35vh;
+  object-fit: cover;
+  background-position: center;
+  /* border-radius: 17px; */
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.bg_color{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/* food menu section */
+.heading{
+  color: #cbd3e0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.food_area{
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.food_item{
+  width: 120px;
+  border: 1.5px solid #cbd3e0;
+  padding-top: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.food_item img{
+  width: 90%;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.food_item p{
+  color: #a9bdde;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* food_items section */
+.food_items{
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.food_cart{
+  width: 212px;
+  box-shadow: 0 1px 8px 1px #cbd3e0;
+  padding-top: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.food_cart img{
+  width: 90%;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+.food_cart > p{
+  color: #a9bdde;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+.purces{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.purces p{
+  color: #a9bdde;
+  font-size: 14px;
+}
+.purces i{
+  background-color: #cbd3e0;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* checkout_section */
+
+.checkout_section{
+  position: relative;
+  position: fixed;
+  top: 0;
+  right: -3000px;
+  width: 300px;
+  height: 100vh;
+  padding: 10px;
+  background-color: aliceblue;
+  transition: right 0.5s ease-in-out;
+}
+.checkout_section.open{
+  right: 0;
+}
+.text_icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.text_icon > i{
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+.card_item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1.5px solid gainsboro;
+  padding: 7px;
+  border-radius: 5px;
+  color: #a9bdde;
+}
+.amount_area{
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+}
+.amount{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1.5px solid gainsboro;
+  padding: 7px;
+  border-radius: 5px;
+  color: #94acd1;
+}
+.amount_area button{
+  width: 100%;
+  margin-top: 15px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.remove_btn{
+  padding: 2px 5px;
+  cursor: pointer;
+  background-color: #94acd1;
+  border-radius: 50%;
+}
